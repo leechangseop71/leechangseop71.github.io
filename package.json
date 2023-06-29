@@ -1,20 +1,11 @@
 {
-  "name": "leechangseop71",
+  "name": "leechangseop71.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"\",",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "GPL-3.0",
-  "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
-  }
+  "license": "ISC"
 }
