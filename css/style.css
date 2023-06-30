@@ -672,17 +672,53 @@ textarea {
     font-weight: 600;
     color: #777; }
   .skills__skill_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;
     }  
   .skills__skill_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;
   }
   .skills__skill_3 {
-         }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;
+     }
   .skills__skill_4 {
-           }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;
+  }
   .skills__skill_5 {
-             }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;  
+  }
   .skills__skill_6 {
-               }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d3d6da;
+    width: 60px;
+    height: 60px;
+  }
 
 .mouse {
   width: 25px;
