@@ -239,9 +239,6 @@ textarea {
         margin: auto;
         position: static;
         transform: translate(0, 0); } }     
-  .home-hero__info {
-    margin: 3rem auto 0 auto;
-    max-width: 80rem; }
   .home-hero__cta {
     margin-top: 5rem;
     text-align: center; }
