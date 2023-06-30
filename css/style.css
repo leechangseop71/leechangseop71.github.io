@@ -238,10 +238,7 @@ textarea {
         padding: 19rem 0 13rem 0;
         margin: auto;
         position: static;
-        transform: translate(0, 0); } }
-  .home-hero__content>.heading-primary>.home-hero__info{
-    display: grid;
-    flex-wrap: wrap;}      
+        transform: translate(0, 0); } }     
   .home-hero__info {
     margin: 3rem auto 0 auto;
     max-width: 80rem; }
