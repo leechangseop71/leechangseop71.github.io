@@ -662,7 +662,7 @@ textarea {
 .skills {
   display: flex;
   flex-wrap: wrap; }
-  .skills__skill {
+  .skills__skill_1 {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -671,6 +671,16 @@ textarea {
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
+  .skills__skill_2 {
+  }
+  .skills__skill_3 {
+         }
+  .skills__skill_4 {
+           }
+  .skills__skill_5 {
+             }
+  .skills__skill_6 {
+               }
 
 .mouse {
   width: 25px;
