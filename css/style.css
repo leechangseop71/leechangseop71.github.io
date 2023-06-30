@@ -269,10 +269,6 @@ textarea {
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
-      .about__content-details-para>ul>li{
-        font-size: medium;
-        color: #ebebeb;
-      }
       .about__content-details-para--hl {
         font-weight: 700;
         margin: 0 3px; }
