@@ -275,6 +275,32 @@ textarea {
           margin-bottom: 2rem; /* 이미지와 내용 사이의 간격 조절 */
       }
 
+      .about__content-skills {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills__skill {
+        background-color: #007bff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .skills__percentage {
+        margin-left: 1rem;
+        font-weight: bold;
+    }
+
         @media only screen and (max-width: 37.5em) {
             .about__content-title {
                 font-size: 2.4rem;
