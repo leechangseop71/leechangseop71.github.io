@@ -330,7 +330,7 @@ textarea {
       }
 
       .skills__skill span {
-          display: inline-block;
+          display: inline;
           font-weight: bold;
           margin-top: 10px;
       }
