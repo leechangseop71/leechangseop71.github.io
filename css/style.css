@@ -269,6 +269,12 @@ textarea {
             margin-bottom: 3rem;
         }
 
+        .about__content-image {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 2rem; /* 이미지와 내용 사이의 간격 조절 */
+      }
+
         @media only screen and (max-width: 37.5em) {
             .about__content-title {
                 font-size: 2.4rem;
