@@ -291,7 +291,7 @@ textarea {
         }
 
         /* 기술 카드 (Skills Card) 스타일 */
-        .card {
+        .about_card_skils {
             border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
