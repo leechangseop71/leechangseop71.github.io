@@ -1,27 +1,36 @@
-$(document).ready(function() {
-  const hamMenuBtn = $('.header__main-ham-menu-cont');
-  const smallMenu = $('.header__sm-menu');
-  const headerHamMenuBtn = $('.header__main-ham-menu');
-  const headerHamMenuCloseBtn = $('.header__main-ham-menu-close');
-  const headerSmallMenuLinks = $('.header__sm-menu-link');
-
-  hamMenuBtn.click(function() {
-    smallMenu.toggleClass('header__sm-menu--active');
-    headerHamMenuBtn.toggleClass('d-none');
-    headerHamMenuCloseBtn.toggleClass('d-none');
-  });
-
-  headerSmallMenuLinks.click(function() {
-    smallMenu.removeClass('header__sm-menu--active');
-    headerHamMenuBtn.removeClass('d-none');
-    headerHamMenuCloseBtn.addClass('d-none');
-  });
-
-  const headerLogoContainer = $('.header__logo-container');
-
-  headerLogoContainer.click(function() {
-    window.location.href = 'index.html';
-  });
+// ---
+const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const smallMenu = document.querySelector('.header__sm-menu')
+const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
+const headerHamMenuCloseBtn = document.querySelector(
+  '.header__main-ham-menu-close'
+)
+const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+hamMenuBtn.addEventListener('click', () => {
+  if (smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active')
+  } else {
+    smallMenu.classList.add('header__sm-menu--active')
+  }
+  if (headerHamMenuBtn.classList.contains('d-none')) {
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  } else {
+    headerHamMenuBtn.classList.add('d-none')
+    headerHamMenuCloseBtn.classList.remove('d-none')
+  }
+})
+for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+  headerSmallMenuLinks[i].addEventListener('click', () => {
+    smallMenu.classList.remove('header__sm-menu--active')
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  })
+}
+// ---
+const headerLogoConatiner = document.querySelector('.header__logo-container')
+headerLogoConatiner.addEventListener('click', () => {
+  location.href = 'index.html'
 
   // GSAP 코드 추가
   gsap.registerPlugin(ScrollTrigger);
