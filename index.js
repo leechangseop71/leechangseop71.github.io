@@ -32,24 +32,14 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 
-  // GSAP 코드 추가
-  gsap.registerPlugin(ScrollTrigger);
 
+  // 스킬 요소를 모두 가져옴
   const skillElements = document.querySelectorAll('.skills__skill');
 
-  skillElements.forEach((element, index) => {
-    gsap.to(element, {
-      scrollTrigger: {
-        trigger: element,
-        start: 'top center',
-        end: 'bottom center',
-        markers: true,
-        toggleActions: 'play none none none',
-      },
-      opacity: 1,
-      x: 0,
-      duration: 0.5,
-      delay: index * 0.2,
-    });
+  // 스킬 요소를 반복하며 퍼센트 값을 업데이트
+  skillElements.forEach(skillElement => {
+      const percentageElement = skillElement.querySelector('.skills__percentage');
+      const percentageValue = percentageElement.textContent; // 퍼센트 값 가져오기
+      skillElement.style.background = `conic-gradient(#007bff 0%, #007bff ${percentageValue}, #f3f3f3 ${percentageValue}, #f3f3f3 100%)`;
   });
-});
+})
