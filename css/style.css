@@ -753,7 +753,7 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgb(208, 202, 202);
+    /*background: rgb(208, 202, 202);*/
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
