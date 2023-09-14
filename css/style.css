@@ -282,14 +282,7 @@ textarea {
             font-weight: bold;
             color: #333;
         }
-        
-        .profile-description {
-            font-size: 18px;
-            color: grey;
-            line-height: 1.7;
-            margin-top: 20px;
-        }
-
+      
         /* 기술 카드 (Skills Card) 스타일 */
         .about_card_skils {
             border: 1px solid #ccc;
