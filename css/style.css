@@ -256,14 +256,14 @@ textarea {
             margin: 0 auto;
             background-color: #fff;
             margin-bottom: 20px;
-            padding: 20px;
+            padding: 200px;
         }
         
         .profile-img {
             max-width: 200px;
             height: auto;
             border-radius: 10%;
-            margin-right: 20px;
+            margin-right: px;
         }
         
         .profile-name {
