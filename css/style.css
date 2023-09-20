@@ -283,7 +283,7 @@ textarea {
             color: #333;
         }
       
-        /* 기술 카드 (Skills Card) 스타일 */
+ /* 기술 카드 (Skills Card) 스타일 */
 .about_card_skils {
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -308,14 +308,14 @@ textarea {
   }
 }
 
-.cards {
+.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.cards__card {
+.skills__skill {
   width: 100px;
   height: 100px;
   position: relative;
@@ -325,33 +325,30 @@ textarea {
   margin: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-}
-
-.cards__card span {
-  display: inline;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.frontend {
   background-color: #f0f0f0;
+  perspective: 1000px; /* 플립 애니메이션을 위한 설정 */
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
-.backend {
-  background-color: #e0e0e0;
+.skills__skill:hover {
+  transform: rotateY(180deg); /* 마우스 호버 시 뒤집힌 상태로 전환 */
 }
 
-.database {
-  background-color: #d0d0d0;
+.skills__skill .front,
+.skills__skill .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 5px;
+.skills__skill .back {
+  transform: rotateY(180deg); /* 초기에는 뒷면이 보이지 않도록 설정 */
 }
  
 .projects__row {
