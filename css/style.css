@@ -308,31 +308,13 @@ textarea {
   }
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
+/* Flip Card 스타일 */
 .skills__skill {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
   position: relative;
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 20px;
   margin: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  perspective: 1000px; /* 플립 애니메이션을 위한 설정 */
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-.skills__skill:hover {
-  transform: rotateY(180deg); /* 마우스 호버 시 뒤집힌 상태로 전환 */
 }
 
 .skills__skill .front,
@@ -340,17 +322,36 @@ textarea {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  backface-visibility: hidden;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .skills__skill .back {
-  transform: rotateY(180deg); /* 초기에는 뒷면이 보이지 않도록 설정 */
+  transform: rotateY(180deg);
+  background-color: #f0f0f0; /* 뒷면 배경색 지정 */
 }
- 
+
+.skills__skill:hover .front {
+  transform: rotateY(180deg);
+}
+
+.skills__skill:hover .back {
+  transform: rotateY(0deg);
+}
+
+/* 추가적인 스타일링을 원하신다면 여기에 추가하실 수 있습니다. */
+/*이 CSS 코드를 사용하여 각 스킬 카드가 마우스 호버 시 뒤집히도록 만들 수 있습니다. 코드에서 뒷면 배경색을 #f0f0f0로 설정하였으나, 원하시는 색상으로 변경하실 수 있습니다. 추가적인 스타일링을 원하시면 해당 부분에 스타일을 추가하실 수 있습니다. */
+
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
