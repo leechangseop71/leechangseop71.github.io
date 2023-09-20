@@ -310,8 +310,8 @@ textarea {
 
 /* Flip Card 스타일 */
 .skills__skill {
-  width: 200px;
-  height: 300px;
+  width: 500px;
+  height: 600px;
   perspective: 1000px;
   position: relative;
   margin: 10px;
