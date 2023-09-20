@@ -284,81 +284,74 @@ textarea {
         }
       
         /* 기술 카드 (Skills Card) 스타일 */
-        .about_card_skils {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            max-width: 950px;
-            margin: 0 auto;
-            background-color: #fff;
-            margin-top: 20px;
-        }
-        
-        .about__content-title {
-            font-weight: 700;
-            font-size: 2.8rem;
-            margin-bottom: 3rem;
-        }
-        
-        @media only screen and (max-width: 37.5em) {
-            .about__content-title {
-                font-size: 2.4rem;
-            }
-        }
-        
-        .skills {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
-      }
-
-      .skills__skill {
-          width: 100px;
-          height: 100px;
-          position: relative;
-          text-align: center;
-      }
-
-
-
-      .skills__skill span {
-          display: inline;
-          font-weight: bold;
-          margin-top: 10px;
-      }
-
-/* 원형 프로그레스 바 스타일 */
-.circle {
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(var(--clr) var(--),#333 100%);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: var(--percentage) 1s ease; /* 퍼센트 값 변경 시 애니메이션 효과 */
+.about_card_skils {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 20px;
 }
 
-/* 퍼센트(%) 스타일 */
-.skills__percentage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about__content-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__content-title {
+      font-size: 2.4rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cards__card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.cards__card span {
+  display: inline;
   font-weight: bold;
-  color: #007bff;
+  margin-top: 10px;
 }
 
-/* 프로그레스 바에 퍼센트(%) 표시 */
-.skills__skill:hover .circle {
-  --percentage: 100%; /* 마우스 오버 시 100%로 채우도록 변경 */
+.frontend {
+  background-color: #f0f0f0;
 }
 
-@keyframes fill {
-  /* 이 부분은 삭제합니다. */
+.backend {
+  background-color: #e0e0e0;
+}
+
+.database {
+  background-color: #d0d0d0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px;
 }
  
 .projects__row {
