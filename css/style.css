@@ -309,12 +309,27 @@ textarea {
 }
 
 /* Flip Card 스타일 */
+/* 부모 컨테이너를 가운데 정렬 */
+.skills {
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 내부 카드를 가운데 정렬 */
 .skills__skill {
-  width: 500px;
-  height: 600px;
+  width: 200px;
+  height: 300px;
   perspective: 1000px;
   position: relative;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 가운데 정렬 */
+  justify-content: center; /* 세로 가운데 정렬 */
 }
 
 .skills__skill .front,
@@ -326,10 +341,6 @@ textarea {
   left: 0;
   transition: transform 0.5s;
   backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -338,7 +349,7 @@ textarea {
 
 .skills__skill .back {
   transform: rotateY(180deg);
-  background-color: #f0f0f0; /* 뒷면 배경색 지정 */
+  background-color: #f0f0f0;
 }
 
 .skills__skill:hover .front {
