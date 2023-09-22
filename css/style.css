@@ -363,53 +363,73 @@ textarea {
 /* 추가적인 스타일링을 원하신다면 여기에 추가하실 수 있습니다. */
 /*이 CSS 코드를 사용하여 각 스킬 카드가 마우스 호버 시 뒤집히도록 만들 수 있습니다. 코드에서 뒷면 배경색을 #f0f0f0로 설정하였으나, 원하시는 색상으로 변경하실 수 있습니다. 추가적인 스타일링을 원하시면 해당 부분에 스타일을 추가하실 수 있습니다. */
 
-.projects__row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
-  margin-bottom: 11rem; }
-@media only screen and (max-width: 56.25em) {
-    .projects__row {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-      margin-bottom: 8rem; } }
-@media only screen and (max-width: 56.25em) {
-    .projects__row {
-      text-align: center; } }
-  .projects__row:last-child {
-    margin-bottom: 0; }
-  .projects__row-img-cont {
-    overflow: hidden; }
-  .projects__row-img {
-  width: 100%;
-  display: block;
-    object-fit: cover; }
-  .projects__row-content {
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-    align-items: flex-start; }
-@media only screen and (max-width: 56.25em) {
-      .projects__row-content {
-        align-items: center; } }
-    .projects__row-content-title {
-  font-weight: 700;
-  font-size: 2.8rem;
-      margin-bottom: 2rem; }
-@media only screen and (max-width: 37.5em) {
-        .projects__row-content-title {
-          font-size: 2.4rem; } }
-    .projects__row-content-desc {
-  font-size: 1.8rem;
-  color: grey;
-  max-width: 60rem;
-  line-height: 1.7;
-      margin-bottom: 3rem; }
-@media only screen and (max-width: 37.5em) {
-        .projects__row-content-desc {
-          font-size: 1.7rem; } }
+        /* 프로젝트 메뉴 스타일 */
+        .menu {
+          display: flex;
+          margin-bottom: 20px;
+      }
 
+      .menu-item {
+          padding: 10px 20px;
+          cursor: pointer;
+          background-color: #f5f5f5;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          margin-right: 10px;
+      }
+
+      .menu-item:hover {
+          background-color: #ddd;
+      }
+
+      /* 프로젝트 내용 스타일 */
+      .project-details {
+          display: none;
+      }
+
+      /* Flip Card 스타일 */
+      .flip-card {
+          perspective: 1000px;
+          width: 100%;
+          height: 400px;
+      }
+
+      .flip-card-inner {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.5s;
+          transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f5f5f5;
+          font-size: 24px;
+      }
+
+      .flip-card-back {
+          background-color: #3498db;
+          color: white;
+          transform: rotateY(180deg);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
 
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);

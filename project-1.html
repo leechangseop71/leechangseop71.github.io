@@ -82,87 +82,56 @@
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
-      </div>
-    </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
+    <div class="menu">
+      <div class="menu-item" onclick="showProject('project-1')">Project 1</div>
+      <div class="menu-item" onclick="showProject('project-2')">Project 2</div>
+      <div class="menu-item" onclick="showProject('project-3')">Project 3</div>
+  </div>
+
+  <div class="flip-card">
+      <div class="flip-card-inner">
+          <div id="project-1" class="project-details flip-card-front">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                  Project 1의 내용을 여기에 추가하세요.
+              </p>
+              <a href="#" class="btn btn--med btn--theme project-details__links-btn" target="_blank">See More</a>
           </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
+
+          <div id="project-2" class="project-details flip-card-front">
+              <h3 class="projects__row-content-title">Project 2</h3>
+              <p class="projects__row-content-desc">
+                  Project 2의 내용을 여기에 추가하세요.
+              </p>
+              <a href="#" class="btn btn--med btn--theme project-details__links-btn" target="_blank">See More</a>
+          </div>
+
+          <div id="project-3" class="project-details flip-card-front">
+              <h3 class="projects__row-content-title">Project 3</h3>
+              <p class="projects__row-content-desc">
+                  Project 3의 내용을 여기에 추가하세요.
+              </p>
+              <a href="#" class="btn btn--med btn--theme project-details__links-btn" target="_blank">See More</a>
+          </div>
+
+          <!-- 다른 프로젝트의 Flip Card를 추가하세요 -->
+
+          <div class="project-details flip-card-back">
+              <!-- 프로젝트 1의 뒷면 (Back) 내용을 여기에 추가하세요 -->
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                  Project 1의 상세 정보를 여기에 추가하세요.
               </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
-              </p>
-            </div>
-            <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                  <!-- 사용한 도구 목록을 여기에 추가하세요 -->
               </div>
-            </div>
-            <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
-            </div>
+              <a href="#" class="btn btn--med btn--theme project-details__links-btn" target="_blank">Live Link</a>
+              <a href="#" class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code Link</a>
           </div>
-        </div>
       </div>
-    </section>
+  </div>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
