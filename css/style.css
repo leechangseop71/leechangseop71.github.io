@@ -139,10 +139,6 @@ section {
     margin-bottom: .3rem;
 }
 
-.home-content p {
-    font-size: 1.6rem;
-}
-
 .home-content .social-media a {
     display: inline-flex;
     justify-content: center;
