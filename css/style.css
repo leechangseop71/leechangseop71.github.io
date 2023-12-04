@@ -325,58 +325,31 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.services {
-    min-height: auto;
-    padding-bottom: 10rem;
+.container {
+  width: 50%; /* Adjust the width based on your design */
+  margin-bottom: 12px;
 }
 
-.services h2 {
-    margin-bottom: 5rem;
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Default color */
+  transition: width 1s ease-in-out; /* Animation for smoothness */
 }
 
-.services .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
+.html { width: 90%; } /* Skill percentage width */
+.css { width: 80%; }
+.js { width: 65%; }
+.react { width: 60%; }
 
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-    text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
-    transition: .5s ease;
-}
+/* Specific styles for individual skill bars */
+.html { background-color: #4CAF50; }
+.css { background-color: #2196F3; }
+.js { background-color: #f44336; }
+.react { background-color: #FF9800; }
 
-.services-container .services-box:hover {
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
-    transform: scale(1.02);
-}
-
-.services-box i {
-    font-size: 7rem;
-    color: var(--main-color);
-}
-
-.services-box h3 {
-    font-size: 2.6rem;
-    transition: .5s ease;
-}
-
-.services-box:hover h3 {
-    color: var(--main-color);
-}
-
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-}
 
 .portfolio {
     min-height: auto;
