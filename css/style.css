@@ -325,26 +325,44 @@ span {
     margin: 2rem 0 3rem;
 }
 
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+.skill {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
 
-/* Container for skill bars */
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 50%;
+  margin-bottom: 12px;
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Default color */
+  transition: width 1s ease-in-out; /* Animation for smoothness */
 }
 
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.react {width: 60%; background-color: #808080;} /* Dark Grey */
+/* Width adjustments for specific skills */
+.html { width: 90%; }
+.css { width: 80%; }
+.js { width: 65%; }
+.react { width: 60%; }
+
+/* Specific styles for individual skill bars */
+.html { background-color: #4CAF50; }
+.css { background-color: #2196F3; }
+.js { background-color: #f44336; }
+.react { background-color: #FF9800; }
+
 
 
 .portfolio {
