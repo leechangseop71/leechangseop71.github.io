@@ -325,41 +325,29 @@ span {
     margin: 2rem 0 3rem;
 }
 
-* {box-sizing: border-box}
+#bars {
+  margin: 2em auto;
+  max-width: 960px;
+  overflow: hidden;
+}
 
-.skill {
+.bar {
+  float: left;
+  width: 20%;
   text-align: center;
-  padding: 50px 0;
-  background-color: #f4f4f4;
 }
 
-.skill-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.bar h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.container {
-  width: 50%;
-  margin-bottom: 12px;
+.bar-circle {
+  display: block;
+  margin: 0.7em auto;
 }
-
-.skills {
-  text-align: right;
-  padding: 10px;
-  color: white;
-  border-radius: 5px;
-  background-color:  #f4f4f4;; /* Default color */
-  transition: width 1s ease-in-out; /* Animation for smoothness */
-}
-
-/* Specific styles for individual skill bars */
-.html {width: 90%; background-color: #4CAF50; }
-.css {width: 80%; background-color: #2196F3; }
-.js {width: 65%; background-color: #f44336; }
-.react {width: 60%; background-color: #FF9800; }
-
-
 
 .portfolio {
     min-height: auto;
