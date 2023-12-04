@@ -325,6 +325,8 @@ span {
     margin: 2rem 0 3rem;
 }
 
+* {box-sizing: border-box}
+
 .skill {
   text-align: center;
   padding: 50px 0;
