@@ -351,17 +351,11 @@ span {
   transition: width 1s ease-in-out; /* Animation for smoothness */
 }
 
-/* Width adjustments for specific skills */
-.html { width: 90%; }
-.css { width: 80%; }
-.js { width: 65%; }
-.react { width: 60%; }
-
 /* Specific styles for individual skill bars */
-.html { background-color: #4CAF50; }
-.css { background-color: #2196F3; }
-.js { background-color: #f44336; }
-.react { background-color: #FF9800; }
+.html {width: 90%; background-color: #4CAF50; }
+.css {width: 80%; background-color: #2196F3; }
+.js {width: 65%; background-color: #f44336; }
+.react {width: 60%; background-color: #FF9800; }
 
 
 
