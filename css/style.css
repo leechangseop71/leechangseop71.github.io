@@ -303,7 +303,10 @@ span {
 }
 
 .about-img img {
-    width: 20vw;
+    image-rendering: crisp-edges;
+    -webkit-image-interpolation-quality: high;
+    -moz-image-interpolation-quality: high;
+    image-interpolation-quality: high;
 }
 
 .heading {
