@@ -339,6 +339,10 @@ span {
   margin-bottom: 5px;
 }
 
+.skillbar-title.span{
+    font-size: 10px;
+}
+
 .skillbar-bar {
   height: 20px;
   background: #f1f1f1; /* Default background color */
